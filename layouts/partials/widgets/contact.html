@@ -53,10 +53,29 @@
       </li>
       {{ end }}
 
+
+      {{ with $.Site.Params.mobile }}
+      <li>
+        <i class="fa-li fas fa-mobile fa-2x" aria-hidden="true"></i>
+        <span id="person-mobile" itemprop="mobile">
+        {{- if $autolink }}<a href="tel:{{ . }}">{{ . }}</a>{{ else }}{{ . }}{{ end -}}
+        </span>
+      </li>
+      {{ end }}
+
       {{ with $.Site.Params.phone }}
       <li>
         <i class="fa-li fas fa-phone fa-2x" aria-hidden="true"></i>
         <span id="person-telephone" itemprop="telephone">
+        {{- if $autolink }}<a href="tel:{{ . }}">{{ . }}</a>{{ else }}{{ . }}{{ end -}}
+        </span>
+      </li>
+      {{ end }}
+
+      {{ with $.Site.Params.fax }}
+      <li>
+        <i class="fa-li fas fa-fax fa-2x" aria-hidden="true"></i>
+        <span id="person-fax" itemprop="fax">
         {{- if $autolink }}<a href="tel:{{ . }}">{{ . }}</a>{{ else }}{{ . }}{{ end -}}
         </span>
       </li>

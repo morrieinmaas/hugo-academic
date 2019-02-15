@@ -51,7 +51,9 @@ time_format = "3:04 PM"
 
 # Enter contact details (optional). To hide a field, clear it to "".
 email = "test@example.org"
+mobile = "888 888 88 88"
 phone = "888 888 88 88"
+fax = "888 888 88 88"
 address = "Building 1 Room 1, Stanford University, California, 90210, USA"
 
 # Office hours: use `<br>` to insert a line break, or set to "" to remove office hours
